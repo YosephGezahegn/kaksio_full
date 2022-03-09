@@ -1,0 +1,50 @@
+<section class="section_wrapper">
+  
+  <div class="section_inner_image_wrapper">
+    {% if module.upper_section_image.src %}
+	{% set sizeAttrs = 'width="{{ module.upper_section_image.width }}" height="{{ module.upper_section_image.height }}"' %}
+	{% if module.upper_section_image.size_type == 'auto' %}
+		{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+	{% elif module.upper_section_image.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.upper_section_image.max_width }}" height="{{ module.upper_section_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.upper_section_image.loading != 'disabled' ? 'loading="{{ module.upper_section_image.loading }}"' : '' %}
+	<img src="{{ module.upper_section_image.src }}" alt="{{ module.upper_section_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
+  </div>
+  
+  
+  <div class="section_inner_text_wrapper">
+    <div>
+      
+    <span style="font-family: {{ module.section_font.font }}; {{ module.section_font.style }}; color: {{ module.section_font.color }}; font-size: {{ module.section_font.size }}{{module.section_font.size_unit }};">
+  {% inline_text field="upper_section_header_text" value="{{ module.upper_section_header_text }}" %}
+     </span>
+    </div>
+    
+    <div>
+      <span style="font-family: {{ module.section_secondary_font.font }}; {{ module.section_secondary_font.style }}; color: {{ module.section_secondary_font.color }}; font-size: {{ module.section_secondary_font.size }}{{module.section_secondary_font.size_unit }};">
+        {% inline_rich_text field="richtext_field" value="{{ module.richtext_field }}" %}
+      </span>
+      
+   
+    </div>
+    
+    <div>
+      {% if module.award_image.src %}
+	{% set sizeAttrs = 'width="{{ module.award_image.width }}" height="{{ module.award_image.height }}"' %}
+	{% if module.award_image.size_type == 'auto' %}
+		{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+	{% elif module.award_image.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.award_image.max_width }}" height="{{ module.award_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.award_image.loading != 'disabled' ? 'loading="{{ module.award_image.loading }}"' : '' %}
+	<img src="{{ module.award_image.src }}" alt="{{ module.award_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
+    </div>
+    
+  </div>
+  
+  
+  
+</section>

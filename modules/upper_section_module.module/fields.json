@@ -1,0 +1,103 @@
+[ {
+  "id" : "aaa4c160-76ba-ba22-059e-dbf5eea58048",
+  "name" : "upper_section_image",
+  "display_width" : null,
+  "label" : "Upper Section Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/kaksio-bg2-2.jpg",
+    "alt" : "kaksio-bg2-2",
+    "width" : 962,
+    "height" : 654,
+    "max_width" : 962,
+    "max_height" : 654,
+    "size_type" : "auto",
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "7205b8a4-0f9b-f569-30bb-d9a033c33c8e",
+  "name" : "upper_section_header_text",
+  "display_width" : null,
+  "label" : "Upper Section Header Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Insert  Upper Section Header Text here",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "What is Kaksio Labs?"
+}, {
+  "id" : "ace7d1ba-3e34-8cb7-f5c7-c13e2d1dc6f7",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><span>Kaksio Labs is a certified Diamond-level HubSpot partner that specializes in HubSpot development, integrations, and challenging deployments. We aim to support the growth of our customers and help build a sustainable competitive advantage by leveraging HubSpot technology. We specialize in the education, energy, technology and financial sectors.</span><br><br><span>Our mission is to be the most innovative technical HubSpot partner in the world.</span><br><br><span>We currently operate in Europe, the UK and North America.</span></p>"
+}, {
+  "id" : "72f5ad48-cb44-81e4-4707-cfd172ea80ac",
+  "name" : "award_image",
+  "display_width" : null,
+  "label" : "Award Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto_custom_max",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/hubspot-diamond-blue.png",
+    "alt" : "hubspot-diamond-blue",
+    "loading" : "lazy",
+    "width" : 270,
+    "height" : 185,
+    "max_width" : 180,
+    "max_height" : 123
+  }
+}, {
+  "id" : "9943b5c7-64b3-31f9-49f9-a9968a7fb8e0",
+  "name" : "section_font",
+  "display_width" : null,
+  "label" : "Section Primary Font",
+  "required" : false,
+  "locked" : false,
+  "load_external_fonts" : true,
+  "type" : "font",
+  "default" : {
+    "styles" : { },
+    "variant" : "700",
+    "font" : "Poppins",
+    "fallback" : "sans-serif",
+    "font_set" : "GOOGLE",
+    "color" : "#000000",
+    "size" : 2.6,
+    "size_unit" : "rem"
+  }
+}, {
+  "id" : "9e44470a-7ca5-1266-35eb-90c9520b0813",
+  "name" : "section_secondary_font",
+  "display_width" : null,
+  "label" : "Section Secondary Font",
+  "required" : false,
+  "locked" : false,
+  "load_external_fonts" : true,
+  "type" : "font",
+  "default" : {
+    "styles" : { },
+    "variant" : "regular",
+    "font" : "Poppins",
+    "fallback" : "sans-serif",
+    "font_set" : "GOOGLE",
+    "color" : "#000000",
+    "size" : null,
+    "size_unit" : "rem"
+  }
+} ]

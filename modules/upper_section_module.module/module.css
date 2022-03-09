@@ -1,0 +1,19 @@
+.section_wrapper{
+  display:flex;
+justify-content: space-between;
+  width: auto;
+  margin-top: 2rem;
+}
+
+.section_inner_text_wrapper{
+display: flex;
+    flex-direction: column;
+    width: 60%;
+  margin-right: 2rem;
+}
+
+
+.section_inner_image_wrapper{
+  width:40%;
+  margin: 4rem 2rem 2rem 2rem;
+}
