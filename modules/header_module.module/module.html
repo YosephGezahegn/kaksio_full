@@ -1,0 +1,69 @@
+
+<div class="header_container">
+  
+</div>
+{% if module.header_image.src %}
+	{% set sizeAttrs = 'width="{{ module.header_image.width }}" height="{{ module.header_image.height }}"' %}
+	{% if module.header_image.size_type == 'auto' %}
+		{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+	{% elif module.header_image.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.header_image.max_width }}" height="{{ module.header_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.header_image.loading != 'disabled' ? 'loading="{{ module.header_image.loading }}"' : '' %}
+	
+<div style=" background-image:url({{ module.header_image.src }});background-repeat:no-repeat;">  
+<div class="nav_container">
+  
+  {% if module.header_logo_image.src %}
+	{% set sizeAttrs = 'width="{{ module.header_logo_image.width }}" height="{{ module.header_logo_image.height }}"' %}
+	{% if module.header_logo_image.size_type == 'auto' %}
+		{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+	{% elif module.header_logo_image.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.header_logo_image.max_width }}" height="{{ module.header_logo_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.header_logo_image.loading != 'disabled' ? 'loading="{{ module.header_logo_image.loading }}"' : '' %}
+	<img src="{{ module.header_logo_image.src }}" alt="{{ module.header_logo_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
+  
+   {% for item in module.nav_group %}
+   
+    {% set href = item.header_nav_link.url.href %}
+	{% if item.header_nav_link.url.type is equalto "EMAIL_ADDRESS" %}
+		{% set href = "mailto:" + href %}
+	{% endif %}
+
+	<a class="nav_link" href="{{ href }}"
+		{% if item.header_nav_link.open_in_new_tab %}target="_blank"{% endif %}
+		{% if item.header_nav_link.rel %}rel="{{ item.header_nav_link.rel }}"{% endif %}
+		>
+    <span style="font-family: {{ module.secondary_font_header.font }}; {{ module.secondary_font_header.style }}; color: {{ module.secondary_font_header.color }}; 
+                 font-size: {{ module.secondary_font_header.size }}{{module.secondary_font_header.size_unit }};">
+      
+	{% inline_text field="header_nav_text" value="{{ item.header_nav_text }}" %}
+      </span>
+	</a>
+ 
+	
+	
+{% endfor %}
+</div>
+  
+  <div style="padding:150px">
+     <span style="font-family: {{ module.header_font_primary.font }}; {{ module.header_font_primary.style }}; color: {{ module.header_font_primary.color }}; font-size: {{ module.header_font_primary.size }}{{module.header_font_primary.size_unit }};">
+    
+   {% inline_text field="header_text" value="{{ module.header_text }}" %}
+  
+  </span>
+  
+  
+   <span style="font-family: {{ module.secondary_font_header.font }}; {{ module.secondary_font_header.style }}; color: {{ module.secondary_font_header.color }}; font-size: {{ module.secondary_font_header.size }}{{module.secondary_font_header.size_unit }};">
+     
+   {% inline_text field="header_detail_text" value="{{ module.header_detail_text }}" %}
+  
+  </span>
+  </div>
+ 
+  
+  
+</div>
+{% endif %}
