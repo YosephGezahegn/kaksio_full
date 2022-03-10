@@ -1,0 +1,66 @@
+<div style="color:#fff; font-family:poppins,sans-serif">
+  {% if module.footer_group.image_field.src %}
+	{% set sizeAttrs = 'width="{{ module.footer_group.image_field.width }}" height="{{ module.footer_group.image_field.height }}"' %}
+	{% if module.footer_group.image_field.size_type == 'auto' %}
+		{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+	{% elif module.footer_group.image_field.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.footer_group.image_field.max_width }}" height="{{ module.footer_group.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.footer_group.image_field.loading != 'disabled' ? 'loading="{{ module.footer_group.image_field.loading }}"' : '' %}
+<div style=" background-image:url({{ module.footer_group.image_field.src  }});
+          background-size:cover; 
+              background-repeat:no-repeat;">  
+
+  {% if module.footer_group.image_field_1.src %}
+	{% set sizeAttrs = 'width="{{ module.footer_group.image_field_1.width }}" height="{{ module.footer_group.image_field_1.height }}"' %}
+	{% if module.footer_group.image_field_1.size_type == 'auto' %}
+		{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+	{% elif module.footer_group.image_field_1.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.footer_group.image_field_1.max_width }}" height="{{ module.footer_group.image_field_1.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.footer_group.image_field_1.loading != 'disabled' ? 'loading="{{ module.footer_group.image_field_1.loading }}"' : '' %}
+	<img src="{{ module.footer_group.image_field_1.src }}"
+       alt="{{ module.footer_group.image_field_1.alt }}" 
+       {{ loadingAttr }} 
+       {{ sizeAttrs }}>
+{% endif %}
+<div style="display:flex;">
+  <div style="
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;" >
+  
+  <div>
+     <div>
+  
+</div>
+ 
+  <div style="max-width: 2rem;display:flex">
+{% for item in module.footer_group.icon_field %}
+      {% icon
+		name="{{ item.name }}"
+		style="{{ item.type }}"
+		unicode="{{ item.unicode }}"
+		icon_set="{{ item.icon_set }}"
+	%}
+     
+	
+{% endfor %}
+  </div>
+  
+  </div>
+  
+
+  <div style="padding: 20px 62px 30px 166px;">  
+{% for item in module.footer_group.text_field_1 %}
+	{% inline_text field="footer_group.text_field_1" value="{{ item }}" %}
+{% endfor %}
+    </div>
+  
+
+  
+</div>
+{% endif %}
+</div>

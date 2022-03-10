@@ -1,7 +1,7 @@
 {
   "global" : false,
   "host_template_types" : [ "PAGE" ],
-  "module_id" : 68127346056,
-  "label" : "Header Module",
+  "module_id" : 68178924337,
+  "label" : "Footer",
   "is_available_for_new_content" : true
 }

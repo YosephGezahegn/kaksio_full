@@ -1,0 +1,134 @@
+[ {
+  "id" : "4ab5d318-d953-f0de-b5c4-2301a6410877",
+  "name" : "footer_group",
+  "display_width" : null,
+  "label" : "Footer group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "fec2b4a6-1c51-11e9-834e-e2f11a6da9a4",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/kaksio-bg1jpg-1.jpg",
+      "alt" : "kaksio-bg1jpg-1",
+      "loading" : "lazy",
+      "width" : 1920,
+      "height" : 601,
+      "max_width" : 1920,
+      "max_height" : 601
+    }
+  }, {
+    "id" : "3c036a5d-c144-2033-eb9d-a46d313398d4",
+    "name" : "image_field_1",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/kaksio-labs-logo-white%20(without%20dot)-1.png",
+      "alt" : "kaksio-labs-logo-white (without dot)-1",
+      "loading" : "lazy",
+      "width" : 2600,
+      "height" : 1201,
+      "max_width" : 200,
+      "max_height" : 92
+    }
+  }, {
+    "id" : "7660f7fa-f9c4-0648-9374-a1eb74d8d8ec",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Add information about company",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Kaksio Labs is a technology company specializing in industry-specific solutions.We leverage and extend the HubSpot platform to power world-leading customer operations."
+  }, {
+    "id" : "a2fef384-1d41-091e-f92a-569a70cacdaf",
+    "name" : "text_field_1",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 10,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : [ "Services" ]
+  }, {
+    "id" : "0406e750-6c09-5312-1391-e753e7c09d5a",
+    "name" : "icon_field",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 10,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "icon_set" : "fontawesome-5.14.0",
+    "type" : "icon",
+    "default" : [ {
+      "name" : "Facebook",
+      "unicode" : "f09a",
+      "type" : "REGULAR"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/kaksio-bg1jpg-1.jpg",
+      "alt" : "kaksio-bg1jpg-1",
+      "loading" : "lazy",
+      "width" : 1920,
+      "height" : 601,
+      "max_width" : 1920,
+      "max_height" : 601
+    },
+    "image_field_1" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/kaksio-labs-logo-white%20(without%20dot)-1.png",
+      "alt" : "kaksio-labs-logo-white (without dot)-1",
+      "loading" : "lazy",
+      "width" : 2600,
+      "height" : 1201,
+      "max_width" : 200,
+      "max_height" : 92
+    },
+    "text_field" : "Kaksio Labs is a technology company specializing in industry-specific solutions.We leverage and extend the HubSpot platform to power world-leading customer operations.",
+    "text_field_1" : [ "Services" ],
+    "icon_field" : [ {
+      "name" : "Facebook",
+      "unicode" : "f09a",
+      "type" : "REGULAR"
+    } ]
+  }
+} ]

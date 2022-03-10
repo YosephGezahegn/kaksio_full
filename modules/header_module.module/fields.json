@@ -1,172 +1,241 @@
 [ {
-  "id" : "2ac2df68-313f-1f55-6c71-efde286355bc",
-  "name" : "header_image",
+  "id" : "3530e1da-1b2e-6b9e-54a5-565b9436a85c",
+  "name" : "header_group",
   "display_width" : null,
-  "label" : "Header Image",
-  "required" : true,
-  "locked" : false,
-  "responsive" : true,
-  "resizable" : true,
-  "show_loading" : false,
-  "type" : "image",
-  "default" : {
-    "size_type" : "auto",
-    "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/kaksio-bg1jpg.jpg",
-    "alt" : "kaksio-bg1jpg",
-    "loading" : "lazy",
-    "width" : 1920,
-    "height" : 601,
-    "max_width" : 1920,
-    "max_height" : 601
-  }
-}, {
-  "id" : "f96e52f0-c8f6-3b6a-2d3e-4af5fde95ddb",
-  "name" : "header_text",
-  "display_width" : null,
-  "label" : "Header Text",
-  "required" : true,
-  "locked" : false,
-  "validation_regex" : "",
-  "placeholder" : "Company Name",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : "Kaksio Labs"
-}, {
-  "id" : "914daa9d-0cc4-bb1a-0ddd-4a5ca9a9db85",
-  "name" : "header_detail_text",
-  "display_width" : null,
-  "label" : "Header Detail Text",
+  "label" : "Header group",
   "required" : false,
   "locked" : false,
-  "validation_regex" : "",
-  "placeholder" : "Something about page",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : "Get to know our company and our HubSpot experts"
-}, {
-  "id" : "0f793bff-ad19-8dd6-3c46-8b1ffeda7482",
-  "name" : "header_font_primary",
-  "display_width" : null,
-  "label" : "Primary Header Font",
-  "required" : false,
-  "locked" : false,
-  "load_external_fonts" : true,
-  "type" : "font",
-  "default" : {
-    "styles" : { },
-    "variant" : "regular",
-    "font" : "Poppins",
-    "fallback" : "sans-serif",
-    "font_set" : "GOOGLE",
-    "size" : 4.13,
-    "size_unit" : "rem"
-  }
-}, {
-  "id" : "d77dac18-f4d5-8bc4-2740-0ca985422147",
-  "name" : "secondary_font_header",
-  "display_width" : null,
-  "label" : "Secondary Font Header",
-  "required" : false,
-  "locked" : false,
-  "load_external_fonts" : true,
-  "type" : "font",
-  "default" : {
-    "styles" : { },
-    "variant" : "regular",
-    "font" : "Poppins",
-    "fallback" : "sans-serif",
-    "font_set" : "GOOGLE",
-    "size" : null,
-    "size_unit" : "rem"
-  }
-}, {
-  "id" : "597ee14e-5867-e558-5ce4-d865dac25649",
-  "name" : "nav_group",
-  "display_width" : null,
-  "label" : "Nav Group",
-  "required" : false,
-  "locked" : false,
-  "occurrence" : {
-    "min" : 1,
-    "max" : 6,
-    "sorting_label_field" : null,
-    "default" : null
-  },
   "children" : [ {
-    "id" : "e62229ea-9d35-f462-1390-967dcde1e456",
-    "name" : "header_nav_link",
+    "id" : "f96e52f0-c8f6-3b6a-2d3e-4af5fde95ddb",
+    "name" : "header_text",
     "display_width" : null,
-    "label" : "Header Nav Link",
-    "required" : false,
-    "locked" : false,
-    "supported_types" : [ "EXTERNAL", "CONTENT" ],
-    "show_advanced_rel_options" : false,
-    "type" : "link",
-    "default" : {
-      "url" : {
-        "content_id" : null,
-        "href" : "",
-        "type" : "CONTENT"
-      },
-      "open_in_new_tab" : false,
-      "no_follow" : false
-    }
-  }, {
-    "id" : "6a9a9d97-4101-189c-6f12-63da95fa0912",
-    "name" : "header_nav_text",
-    "display_width" : null,
-    "label" : "Header Nav Text",
+    "label" : "Header Text",
     "required" : true,
     "locked" : false,
     "validation_regex" : "",
-    "visibility" : {
-      "controlling_field" : "e62229ea-9d35-f462-1390-967dcde1e456",
-      "controlling_value_regex" : null,
-      "operator" : "NOT_EMPTY",
-      "access" : null,
-      "hidden_subfields" : null
-    },
+    "placeholder" : "Company Name",
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
-    "default" : "home"
+    "default" : "Kaksio Labs"
+  }, {
+    "id" : "2ac2df68-313f-1f55-6c71-efde286355bc",
+    "name" : "header_image",
+    "display_width" : null,
+    "label" : "Header Image",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/kaksio-bg1jpg.jpg",
+      "alt" : "kaksio-bg1jpg",
+      "loading" : "lazy",
+      "width" : 1920,
+      "height" : 601,
+      "max_width" : 1920,
+      "max_height" : 601
+    }
+  }, {
+    "id" : "5ca90f50-2634-d586-4c0e-717f2ddcde21",
+    "name" : "header_logo_image",
+    "display_width" : null,
+    "label" : "Header Logo Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/kaksio-labs-logo-white%20(without%20dot).png",
+      "alt" : "kaksio-labs-logo-white (without dot)",
+      "loading" : "lazy",
+      "width" : 2600,
+      "height" : 1201,
+      "max_width" : 162,
+      "max_height" : 75
+    }
+  }, {
+    "id" : "914daa9d-0cc4-bb1a-0ddd-4a5ca9a9db85",
+    "name" : "header_detail_text",
+    "display_width" : null,
+    "label" : "Header Detail Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Something about page",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get to know our company and our HubSpot experts"
+  }, {
+    "id" : "0f793bff-ad19-8dd6-3c46-8b1ffeda7482",
+    "name" : "header_font_primary",
+    "display_width" : null,
+    "label" : "Primary Header Font",
+    "required" : false,
+    "locked" : false,
+    "load_external_fonts" : true,
+    "type" : "font",
+    "default" : {
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Poppins",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE",
+      "size" : 4.13,
+      "size_unit" : "rem",
+      "color" : "#FFFFFF"
+    }
+  }, {
+    "id" : "d77dac18-f4d5-8bc4-2740-0ca985422147",
+    "name" : "secondary_font_header",
+    "display_width" : null,
+    "label" : "Secondary Font Header",
+    "required" : false,
+    "locked" : false,
+    "load_external_fonts" : true,
+    "type" : "font",
+    "default" : {
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Poppins",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE",
+      "size" : 1,
+      "size_unit" : "rem",
+      "color" : "#FFFFFF"
+    }
+  }, {
+    "id" : "597ee14e-5867-e558-5ce4-d865dac25649",
+    "name" : "nav_group",
+    "display_width" : null,
+    "label" : "Nav Group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 6,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "e62229ea-9d35-f462-1390-967dcde1e456",
+      "name" : "header_nav_link",
+      "display_width" : null,
+      "label" : "Header Nav Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "6a9a9d97-4101-189c-6f12-63da95fa0912",
+      "name" : "header_nav_text",
+      "display_width" : null,
+      "label" : "Header Nav Text",
+      "required" : true,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "e62229ea-9d35-f462-1390-967dcde1e456",
+        "controlling_value_regex" : null,
+        "operator" : "NOT_EMPTY",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "home"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "header_nav_link" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "header_nav_text" : "home"
+    } ]
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "type" : "group",
-  "default" : [ {
-    "header_nav_link" : {
-      "url" : {
-        "content_id" : null,
-        "href" : "",
-        "type" : "CONTENT"
-      },
-      "open_in_new_tab" : false,
-      "no_follow" : false
-    },
-    "header_nav_text" : "home"
-  } ]
-}, {
-  "id" : "5ca90f50-2634-d586-4c0e-717f2ddcde21",
-  "name" : "header_logo_image",
-  "display_width" : null,
-  "label" : "Header Logo Image",
-  "required" : false,
-  "locked" : false,
-  "responsive" : true,
-  "resizable" : true,
-  "show_loading" : false,
-  "type" : "image",
   "default" : {
-    "size_type" : "auto_custom_max",
-    "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/kaksio-labs-logo-white%20(without%20dot).png",
-    "alt" : "kaksio-labs-logo-white (without dot)",
-    "loading" : "lazy",
-    "width" : 2600,
-    "height" : 1201,
-    "max_width" : 162,
-    "max_height" : 75
+    "header_text" : "Kaksio Labs",
+    "header_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/kaksio-bg1jpg.jpg",
+      "alt" : "kaksio-bg1jpg",
+      "loading" : "lazy",
+      "width" : 1920,
+      "height" : 601,
+      "max_width" : 1920,
+      "max_height" : 601
+    },
+    "header_logo_image" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/kaksio-labs-logo-white%20(without%20dot).png",
+      "alt" : "kaksio-labs-logo-white (without dot)",
+      "loading" : "lazy",
+      "width" : 2600,
+      "height" : 1201,
+      "max_width" : 162,
+      "max_height" : 75
+    },
+    "header_detail_text" : "Get to know our company and our HubSpot experts",
+    "header_font_primary" : {
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Poppins",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE",
+      "size" : 4.13,
+      "size_unit" : "rem",
+      "color" : "#FFFFFF"
+    },
+    "secondary_font_header" : {
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Poppins",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE",
+      "size" : 1,
+      "size_unit" : "rem",
+      "color" : "#FFFFFF"
+    },
+    "nav_group" : [ {
+      "header_nav_link" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "header_nav_text" : "home"
+    } ]
   }
 } ]

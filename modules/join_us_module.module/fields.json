@@ -63,7 +63,7 @@
       "font" : "Poppins",
       "fallback" : "sans-serif",
       "font_set" : "GOOGLE",
-      "size" : 1.2,
+      "size" : 1.5,
       "size_unit" : "rem"
     }
   }, {
@@ -81,7 +81,8 @@
       "font" : "Poppins",
       "fallback" : "sans-serif",
       "font_set" : "GOOGLE",
-      "size" : 16
+      "size" : 1,
+      "color" : "#FFFFFF"
     }
   } ],
   "tab" : "CONTENT",
@@ -106,7 +107,7 @@
       "font" : "Poppins",
       "fallback" : "sans-serif",
       "font_set" : "GOOGLE",
-      "size" : 1.2,
+      "size" : 1.5,
       "size_unit" : "rem"
     },
     "joinus_secondary_font" : {
@@ -115,7 +116,8 @@
       "font" : "Poppins",
       "fallback" : "sans-serif",
       "font_set" : "GOOGLE",
-      "size" : 16
+      "size" : 1,
+      "color" : "#FFFFFF"
     }
   }
 } ]
