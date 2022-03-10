@@ -1,0 +1,100 @@
+<section>
+{% for item in module.employee_card_group %}
+
+<div class="card_container">
+  <div class="card_image">
+
+    {% if item.image_field.src %}
+    {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+    {% if item.image_field.size_type == 'auto' %}
+    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+    {% elif item.image_field.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}"
+    style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+
+
+    {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+    <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+  </div>
+
+  <div class="content_card_text">
+
+    <div>
+      
+       
+        
+        <span style="font-family: {{ module.employee_card_font_primary.font }}; {{ module.employee_card_font_primary.style }};
+                     color: {{ module.employee_card_font_primary.color }};
+                     font-size: {{ module.employee_card_font_primary.size }}{{module.employee_card_font_primary.size_unit }};">
+         {% inline_text field="employee_name" value="{{ item.employee_name }}" %}</span>
+ 
+     
+    </div>
+
+
+    <div>
+       <span style="font-family: {{ module.employee_card_font_primary.font }};
+                     {{ module.employee_card_font_primary.style }};
+                    font-size:16px;
+                    margin-top:17px;
+                    ">
+         {% inline_text field="employee_title" value="{{ item.employee_title }}" %}
+       </span>
+      
+    </div>
+
+  <div style="margin-top:32px">
+      {% set href = item.email_group.employee_email_link.url.href %}
+      {% if item.email_group.employee_email_link.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" {% if item.email_group.employee_email_link.open_in_new_tab %}target="_blank" {% endif %} {%
+        if item.email_group.employee_email_link.rel %}rel="{{ item.email_group.employee_email_link.rel }}" {% endif %}>
+        
+      <span style="font-family:poppins;
+                   color: {{ module.employee_card_font_secondary.color }};
+                   font-size:14px">
+         {% inline_text field="email_group.employee_email_text" value="{{ item.email_group.employee_email_text }}" %}
+      </span>  
+        
+     </a>
+
+    </div>
+
+
+    <div style="text-align: center;">
+
+      {% set href = item.linkedin_group.employee_linkedin_link.url.href %}
+      {% if item.linkedin_group.employee_linkedin_link.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" {% if item.linkedin_group.employee_linkedin_link.open_in_new_tab %}target="_blank" {% endif
+        %} {% if item.linkedin_group.employee_linkedin_link.rel
+        %}rel="{{ item.linkedin_group.employee_linkedin_link.rel }}" {% endif %}>
+        
+          <span style="font-family: {{ module.employee_card_font_secondary.font }}; 
+                   {{ module.employee_card_font_secondary.style }};
+                   color: {{ module.employee_card_font_secondary.color }};
+                   font-size: {{ module.employee_card_font_secondary.size }}
+                   {{module.employee_card_font_secondary.size_unit }};">
+        {% inline_text field="linkedin_group.employee_linkedin_text" value="{{item.linkedin_group.employee_linkedin_text }}" %}
+      </span>
+      </a>
+    </div>
+
+
+  
+
+  </div>
+
+
+
+
+</div>
+
+
+
+{% endfor %}
+</section>

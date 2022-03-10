@@ -1,0 +1,264 @@
+[ {
+  "id" : "81dea63e-7c1f-3bbc-8f2f-540b2a4e3b0a",
+  "name" : "employee_card_group",
+  "display_width" : null,
+  "label" : "Employee Card Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 20,
+    "sorting_label_field" : "44562517-0ec9-50bb-78b5-ad131453ebf3",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "b109b69d-77ad-12a6-429e-513334899a91",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/1.png",
+      "alt" : "1",
+      "loading" : "lazy",
+      "width" : 500,
+      "height" : 600,
+      "max_width" : 500,
+      "max_height" : 600
+    }
+  }, {
+    "id" : "44562517-0ec9-50bb-78b5-ad131453ebf3",
+    "name" : "employee_name",
+    "display_width" : null,
+    "label" : "Employee Name",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Enter Employee Name",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Cong Tung Phan"
+  }, {
+    "id" : "949131ba-cd47-b69b-dfe9-8841df250d62",
+    "name" : "employee_title",
+    "display_width" : null,
+    "label" : "Employee Title",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Enter Employee Title",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Full-Stack Developer, Team Lead"
+  }, {
+    "id" : "83c86c1d-e4e0-20eb-e2dd-6842d3f8e56d",
+    "name" : "linkedin_group",
+    "display_width" : null,
+    "label" : "LinkedIn Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "bf72b858-d3f6-b8bb-05df-5425c5c9a5a2",
+      "name" : "employee_linkedin_link",
+      "display_width" : null,
+      "label" : "Employee LinkedIn Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.linkedin.com/in/cong-tung-phan-a6315710a/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "9607af99-ae9f-10f5-4c98-7395b9962f63",
+      "name" : "employee_linkedin_text",
+      "display_width" : null,
+      "label" : "Employee LinkedIn Text",
+      "required" : true,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "bf72b858-d3f6-b8bb-05df-5425c5c9a5a2",
+        "controlling_value_regex" : null,
+        "operator" : "NOT_EMPTY",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "placeholder" : "Enter Linkedin ",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Linkedin"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : true,
+    "type" : "group",
+    "default" : {
+      "employee_linkedin_link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.linkedin.com/in/cong-tung-phan-a6315710a/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "employee_linkedin_text" : "Linkedin"
+    }
+  }, {
+    "id" : "0d3434c6-e196-0e21-9d7e-abf5f7d78c90",
+    "name" : "email_group",
+    "display_width" : null,
+    "label" : "Email Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "b6440e78-e4ad-5127-a500-a1f4c124c14e",
+      "name" : "employee_email_link",
+      "display_width" : null,
+      "label" : "Employee Email Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EMAIL_ADDRESS",
+          "href" : "tung@kaks.io",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "700ff0d0-8e1e-ece4-f6b5-8852dde52ff1",
+      "name" : "employee_email_text",
+      "display_width" : null,
+      "label" : "Employee Email Text",
+      "required" : true,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "b6440e78-e4ad-5127-a500-a1f4c124c14e",
+        "controlling_value_regex" : null,
+        "operator" : "NOT_EMPTY",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "placeholder" : "Enter Email",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "tung@kaks.io"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : true,
+    "type" : "group",
+    "default" : {
+      "employee_email_link" : {
+        "url" : {
+          "type" : "EMAIL_ADDRESS",
+          "href" : "tung@kaks.io",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "employee_email_text" : "tung@kaks.io"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/1.png",
+      "alt" : "1",
+      "loading" : "lazy",
+      "width" : 500,
+      "height" : 600,
+      "max_width" : 500,
+      "max_height" : 600
+    },
+    "employee_name" : "Cong Tung Phan",
+    "employee_title" : "Full-Stack Developer, Team Lead",
+    "linkedin_group" : {
+      "employee_linkedin_link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.linkedin.com/in/cong-tung-phan-a6315710a/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "employee_linkedin_text" : "Linkedin"
+    },
+    "email_group" : {
+      "employee_email_link" : {
+        "url" : {
+          "type" : "EMAIL_ADDRESS",
+          "href" : "tung@kaks.io",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "employee_email_text" : "tung@kaks.io"
+    }
+  } ]
+}, {
+  "id" : "0f976d3c-ee8e-da86-482c-26cea55021ef",
+  "name" : "employee_card_font_primary",
+  "display_width" : null,
+  "label" : "Employee Card Font Primary",
+  "required" : false,
+  "locked" : false,
+  "load_external_fonts" : true,
+  "type" : "font",
+  "default" : {
+    "styles" : { },
+    "variant" : "700",
+    "font" : "Poppins",
+    "fallback" : "sans-serif",
+    "font_set" : "GOOGLE",
+    "size" : 2,
+    "size_unit" : "px"
+  }
+}, {
+  "id" : "a77ed753-416c-2001-6261-4139d8a56111",
+  "name" : "employee_card_font_secondary",
+  "display_width" : null,
+  "label" : "Employee Card Font Secondary",
+  "required" : false,
+  "locked" : false,
+  "load_external_fonts" : true,
+  "type" : "font",
+  "default" : {
+    "styles" : { },
+    "variant" : "regular",
+    "font" : "Poppins",
+    "fallback" : "sans-serif",
+    "font_set" : "GOOGLE",
+    "color" : "#9d29a5",
+    "size" : 13,
+    "size_unit" : "px"
+  }
+} ]
