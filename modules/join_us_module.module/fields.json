@@ -1,0 +1,94 @@
+[ {
+  "id" : "2d48f8b2-8339-5594-6131-2b7e7204f3d0",
+  "name" : "joinus_field_group",
+  "display_width" : null,
+  "label" : "JoinUs Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ab93542c-9171-fd7b-e347-4733f986cd0d",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/kaksio-bg6.jpg",
+      "alt" : "kaksio-bg6",
+      "loading" : "lazy",
+      "width" : 2400,
+      "height" : 1350,
+      "max_width" : 2400,
+      "max_height" : 1350
+    }
+  }, {
+    "id" : "b4f031b9-9bb9-327c-7470-8a71641968c5",
+    "name" : "choose_header_text",
+    "display_width" : null,
+    "label" : "Choose Header Text",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Write the Header text for the page",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Why choose us?"
+  }, {
+    "id" : "a11f59d4-4456-6c6b-f961-1a8e2155b689",
+    "name" : "choose_us_detail_text",
+    "display_width" : null,
+    "label" : "Choose-Us Detail Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><span>After all, technology plays a minor role when carrying through big organizational changes. Our goal is to create human HubSpot solutions for the world, as we believe that change is always driven by individuals. Our values freedom, pioneering, courage and empathy guide our daily work.</span></p>\n<p><span>Our focus is on HubSpot technology, but above all, we want to understand our customers’ business goals behind the desired changes. The foundations of&nbsp;</span>Kaksio<span>&nbsp;Labs are laid on design agency&nbsp;<a href=\"https://www.vere.fi/\" rel=\"noopener\">Vere Oy</a>'s ideology, and this legacy still affects today how we approach the everyday challenges of our customers.</span></p>\n<p><span>Why HubSpot? We found out that HubSpot was often the best option for technology when driving business transformation for our customers. HubSpot aims to grow into a holistic ecosystem of marketing, sales and customer relationships. Our customers have selected us as their deployment partner especially in more demanding projects, where a deep understanding of the business, integrations and migrations play key role.</span></p>"
+  }, {
+    "id" : "b96bc250-7699-b2a0-a906-da09d5389846",
+    "name" : "joinus_primary_font",
+    "display_width" : null,
+    "label" : "JoinUs Primary Font",
+    "required" : false,
+    "locked" : false,
+    "load_external_fonts" : true,
+    "type" : "font",
+    "default" : {
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Poppins",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE",
+      "size" : 18
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/21525269/kaksio-bg6.jpg",
+      "alt" : "kaksio-bg6",
+      "loading" : "lazy",
+      "width" : 2400,
+      "height" : 1350,
+      "max_width" : 2400,
+      "max_height" : 1350
+    },
+    "choose_header_text" : "Why choose us?",
+    "choose_us_detail_text" : "<p><span>After all, technology plays a minor role when carrying through big organizational changes. Our goal is to create human HubSpot solutions for the world, as we believe that change is always driven by individuals. Our values freedom, pioneering, courage and empathy guide our daily work.</span></p>\n<p><span>Our focus is on HubSpot technology, but above all, we want to understand our customers’ business goals behind the desired changes. The foundations of&nbsp;</span>Kaksio<span>&nbsp;Labs are laid on design agency&nbsp;<a href=\"https://www.vere.fi/\" rel=\"noopener\">Vere Oy</a>'s ideology, and this legacy still affects today how we approach the everyday challenges of our customers.</span></p>\n<p><span>Why HubSpot? We found out that HubSpot was often the best option for technology when driving business transformation for our customers. HubSpot aims to grow into a holistic ecosystem of marketing, sales and customer relationships. Our customers have selected us as their deployment partner especially in more demanding projects, where a deep understanding of the business, integrations and migrations play key role.</span></p>",
+    "joinus_primary_font" : {
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Poppins",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE",
+      "size" : 18
+    }
+  }
+} ]
