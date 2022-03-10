@@ -1,7 +1,11 @@
-# kaksio_full
-A clone of Kaksio Labs Teams page with HubSpot, created by creating a theme using modules
+# kaksio_teams_page
 
+A clone of Kaksio Labs Teams page with HubSpot,
+It was made using html, css, and Hubl 
+All the elements on the page are entirely made of modules
 
-header navigation only accepts 6 elements, and is a repeating module
+note
 
-hs fetch --overwrite kaksio_teams_theme kaksio_full
+header and footer navigation elements only accepts 6 elements, and are repeating fields.
+
+# Demo Link - http://hubspot-developers-1g9upk5-21525269.hs-sites.com/kaksio_team_theme
