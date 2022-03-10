@@ -1,6 +1,6 @@
 {
   "label" : "kaksio_teams_theme",
-  "preview_path" : null,
+   "preview_path" : "./templates/Home.html",
   "screenshot_path" : null,
   "enable_domain_stylesheets" : false,
   "is_available_for_new_content" : true,

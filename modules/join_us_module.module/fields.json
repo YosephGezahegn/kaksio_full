@@ -47,12 +47,12 @@
     "required" : false,
     "locked" : false,
     "type" : "richtext",
-    "default" : "<p><span>After all, technology plays a minor role when carrying through big organizational changes. Our goal is to create human HubSpot solutions for the world, as we believe that change is always driven by individuals. Our values freedom, pioneering, courage and empathy guide our daily work.</span></p>\n<p><span>Our focus is on HubSpot technology, but above all, we want to understand our customers’ business goals behind the desired changes. The foundations of&nbsp;</span>Kaksio<span>&nbsp;Labs are laid on design agency&nbsp;<a href=\"https://www.vere.fi/\" rel=\"noopener\">Vere Oy</a>'s ideology, and this legacy still affects today how we approach the everyday challenges of our customers.</span></p>\n<p><span>Why HubSpot? We found out that HubSpot was often the best option for technology when driving business transformation for our customers. HubSpot aims to grow into a holistic ecosystem of marketing, sales and customer relationships. Our customers have selected us as their deployment partner especially in more demanding projects, where a deep understanding of the business, integrations and migrations play key role.</span></p>"
+    "default" : "<p style=\"font-size: 12px;\"><span>After all, technology plays a minor role when carrying through big organizational changes. Our goal is to create human HubSpot solutions for the world, as we believe that change is always driven by individuals. Our values freedom, pioneering, courage and empathy guide our daily work.</span></p>\n<p style=\"font-size: 12px;\"><span>Our focus is on HubSpot technology, but above all, we want to understand our customers’ business goals behind the desired changes. The foundations of&nbsp;</span>Kaksio<span>&nbsp;Labs are laid on design agency&nbsp;<a href=\"https://www.vere.fi/\" rel=\"noopener\">Vere Oy</a>'s ideology, and this legacy still affects today how we approach the everyday challenges of our customers.</span></p>\n<p style=\"font-size: 12px;\"><span>Why HubSpot? We found out that HubSpot was often the best option for technology when driving business transformation for our customers. HubSpot aims to grow into a holistic ecosystem of marketing, sales and customer relationships. Our customers have selected us as their deployment partner especially in more demanding projects, where a deep understanding of the business, integrations and migrations play key role.</span></p>"
   }, {
-    "id" : "b96bc250-7699-b2a0-a906-da09d5389846",
-    "name" : "joinus_primary_font",
+    "id" : "4996f21a-27ca-c378-d50e-bd6ee0333b51",
+    "name" : "joinus_header_font",
     "display_width" : null,
-    "label" : "JoinUs Primary Font",
+    "label" : "Joinus Header Font",
     "required" : false,
     "locked" : false,
     "load_external_fonts" : true,
@@ -63,7 +63,25 @@
       "font" : "Poppins",
       "fallback" : "sans-serif",
       "font_set" : "GOOGLE",
-      "size" : 18
+      "size" : 1.2,
+      "size_unit" : "rem"
+    }
+  }, {
+    "id" : "31cb67c6-3ee4-1767-af26-3d9e38226c9e",
+    "name" : "joinus_secondary_font",
+    "display_width" : null,
+    "label" : "Joinus Secondary Font",
+    "required" : false,
+    "locked" : false,
+    "load_external_fonts" : true,
+    "type" : "font",
+    "default" : {
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Poppins",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE",
+      "size" : 16
     }
   } ],
   "tab" : "CONTENT",
@@ -81,14 +99,23 @@
       "max_height" : 1350
     },
     "choose_header_text" : "Why choose us?",
-    "choose_us_detail_text" : "<p><span>After all, technology plays a minor role when carrying through big organizational changes. Our goal is to create human HubSpot solutions for the world, as we believe that change is always driven by individuals. Our values freedom, pioneering, courage and empathy guide our daily work.</span></p>\n<p><span>Our focus is on HubSpot technology, but above all, we want to understand our customers’ business goals behind the desired changes. The foundations of&nbsp;</span>Kaksio<span>&nbsp;Labs are laid on design agency&nbsp;<a href=\"https://www.vere.fi/\" rel=\"noopener\">Vere Oy</a>'s ideology, and this legacy still affects today how we approach the everyday challenges of our customers.</span></p>\n<p><span>Why HubSpot? We found out that HubSpot was often the best option for technology when driving business transformation for our customers. HubSpot aims to grow into a holistic ecosystem of marketing, sales and customer relationships. Our customers have selected us as their deployment partner especially in more demanding projects, where a deep understanding of the business, integrations and migrations play key role.</span></p>",
-    "joinus_primary_font" : {
+    "choose_us_detail_text" : "<p style=\"font-size: 12px;\"><span>After all, technology plays a minor role when carrying through big organizational changes. Our goal is to create human HubSpot solutions for the world, as we believe that change is always driven by individuals. Our values freedom, pioneering, courage and empathy guide our daily work.</span></p>\n<p style=\"font-size: 12px;\"><span>Our focus is on HubSpot technology, but above all, we want to understand our customers’ business goals behind the desired changes. The foundations of&nbsp;</span>Kaksio<span>&nbsp;Labs are laid on design agency&nbsp;<a href=\"https://www.vere.fi/\" rel=\"noopener\">Vere Oy</a>'s ideology, and this legacy still affects today how we approach the everyday challenges of our customers.</span></p>\n<p style=\"font-size: 12px;\"><span>Why HubSpot? We found out that HubSpot was often the best option for technology when driving business transformation for our customers. HubSpot aims to grow into a holistic ecosystem of marketing, sales and customer relationships. Our customers have selected us as their deployment partner especially in more demanding projects, where a deep understanding of the business, integrations and migrations play key role.</span></p>",
+    "joinus_header_font" : {
       "styles" : { },
       "variant" : "regular",
       "font" : "Poppins",
       "fallback" : "sans-serif",
       "font_set" : "GOOGLE",
-      "size" : 18
+      "size" : 1.2,
+      "size_unit" : "rem"
+    },
+    "joinus_secondary_font" : {
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Poppins",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE",
+      "size" : 16
     }
   }
 } ]

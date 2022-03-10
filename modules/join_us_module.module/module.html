@@ -8,30 +8,38 @@
 		{% set sizeAttrs = 'width="{{ module.joinus_field_group.image_field.max_width }}" height="{{ module.joinus_field_group.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
 	{% endif %}
 	 {% set loadingAttr = module.joinus_field_group.image_field.loading != 'disabled' ? 'loading="{{ module.joinus_field_group.image_field.loading }}"' : '' %}
-	<div style="background-size:100%; 
+	<div style="background-size:cover; 
               background-image:url({{  module.joinus_field_group.image_field.src }});
               background-repeat:no-repeat;
              ">  
 
-    <div style="padding:100px; display:flex; max-width: 580px;">
+    <div style="padding:100px; max-width: 580px;">
     
-  <div class="header-text">
-     {% inline_text field="joinus_field_group.choose_header_text" value="{{ module.joinus_field_group.choose_header_text }}" %}
- <span style="font-family: {{ module.joinus_field_group.joinus_primary_font.font }};
-              {{ module.joinus_field_group.joinus_primary_font.style }}; 
-              color: {{ module.joinus_field_group.joinus_primary_font.color }}; 
-              font-size: {{ module.joinus_field_group.joinus_primary_font.size }}
-              {{module.joinus_field_group.joinus_primary_font.size_unit }};
-              line-height: 1.5; ">
+  <div >
+  
+   
+    
 
-   {% inline_rich_text field="joinus_field_group.choose_us_detail_text" value="{{ module.joinus_field_group.choose_us_detail_text }}" %}
-   </span>
+   
+  <span style="font-family: {{ module.joinus_field_group.joinus_header_font.font }}; 
+               {{ module.joinus_field_group.joinus_header_font.style }}; 
+               color: {{ module.joinus_field_group.joinus_header_font.color }};
+               font-size: {{ module.joinus_field_group.joinus_header_font.size }}rem;"
+              class="header_text">
+    {% inline_text field="joinus_field_group.choose_header_text" value="{{ module.joinus_field_group.choose_header_text }}" %}
+</span>  
     
+    
+ <span style="font-family: {{ module.joinus_field_group.joinus_secondary_font.font }}; 
+              {{ module.joinus_field_group.joinus_secondary_font.style }};
+              color: {{ module.joinus_field_group.joinus_secondary_font.color }}; 
+              font-size: {{ module.joinus_field_group.joinus_secondary_font.size }}rem;  ">
+     {% inline_rich_text field="joinus_field_group.choose_us_detail_text" value="{{ module.joinus_field_group.choose_us_detail_text }}" %}
+   </span>
 
     </div> 
         <div>
-     <span style="color:#ffff">
-   </span>
+
     </div>
      
   </div>

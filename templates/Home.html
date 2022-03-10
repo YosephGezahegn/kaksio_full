@@ -1,0 +1,25 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    {{ standard_header_includes }}
+  </head>
+  <body>
+  
+    {% module "module_16468859123732" path="/kaksio_teams_theme/modules/header_module", label="header_module" %}
+    
+    {% module "module_16468859318403" path="/kaksio_teams_theme/modules/upper_section_module", label="upper_section_module" %}
+    
+    {% module "module_16468859481655" path="/kaksio_teams_theme/modules/join_us_module", label="join_us_module" %}
+    
+    {% module "module_16468859591537" path="/kaksio_teams_theme/modules/employee_card_module", label="employee_card_module" %}
+    
+    {{ standard_footer_includes }}
+  </body>
+</html>
